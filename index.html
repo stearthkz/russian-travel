@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/index.css">
-    <title>Путешествие по России</title>
+    <title>Путешествия по России</title>
   </head>
   <body class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/header-logo.svg" alt="Логотип">
+      <ul class="header__lang-links">
+        <li class="header__lang-item">
+          <a class="header__lang-link header__lang-link_active" href="#">Ru</a>
+        </li>
+        <li class="header__lang-item">
+          <a class="header__lang-link" href="#">En</a>
+        </li>
+      </ul>
+    </header>
     <main class="content">
+      <section class="lead">
+        <h1 class="lead__title">Путешествия по России</h1>
+        <p class="lead__subtitle">
+          Настоящая страна не в выпусках новостей, а здесь.
+        </p>
+        <img class="lead__image" src="./images/lead-polka.jpg" alt="Плацкарт">
+        <p class="lead__caption">ваша полка — верхняя</p>
+      </section>
+
       <section class="cover">
         <a
           class="cover__overlay"
@@ -69,7 +89,11 @@
           </li>
         </ul>
       </nav>
-      <p class="footer__copyright">&copy; 2023. Сергей Цепилов</p>
+      <p class="footer__copyright">
+        &copy; <span class="footer__year" id="currentYear"></span>. Сергей
+        Цепилов
+      </p>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
